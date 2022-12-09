@@ -91,7 +91,7 @@ body a {
 }
 
 header {
-	background: url(../../img/HERO\ IMG.png);
+	background: url(../img/HERO\ IMG.png);
 	height: 800px;
 	padding-top: 50px;
 }
@@ -121,7 +121,7 @@ header .navbar .menu li:last-child {
 	margin-left: 63px;
 }
 header .navbar .menu li:nth-child(4) {
-	background: url(../../img/cart.png) center no-repeat;
+	background: url(../img/cart.png) center no-repeat;
 	padding-right: 34.7px;
 	margin-right: 37.32px;
 	background-position: right;
@@ -133,7 +133,7 @@ header .navbar .menu li:nth-child(5) {
 	font-size: 14px;
 }
 header .navbar .menu li:nth-child(5) .link {
-	background: url(../../img/phone.png) center no-repeat;
+	background: url(../img/phone.png) center no-repeat;
 	background-size: 23px 23px;
 	background-position: left center;
 	padding-left: 29px;
@@ -228,7 +228,7 @@ header .intro > div {
 header .intro > div > h2 {
 	padding-top: 139px;
 	margin-bottom: 20px;
-	background: url("../../img/Mask Group.png") center no-repeat;
+	background: url("../img/Mask Group.png") center no-repeat;
 }
 header .intro > div p {
 	color: #656363;
@@ -304,7 +304,7 @@ header .intro > div span {
 	        align-items: center;
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
-	background: url(../../img/bg.png);
+	background: url(../img/bg.png);
 	color: white;
 	padding-top: 80px;
 	padding-bottom: 104px;
@@ -382,7 +382,7 @@ header .intro > div span {
 	color: black;
 	font-size: 16px;
 	line-height: 21.71px;
-	background: url(../../img/Mask\ Group-bg.png) center no-repeat;
+	background: url(../img/Mask\ Group-bg.png) center no-repeat;
 	padding-bottom: 226px;
 }
 .our-menu-section .title {

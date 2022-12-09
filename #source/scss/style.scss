@@ -40,7 +40,7 @@ body {
 }
 
 header {
-    background: url(../img/HERO\ IMG.png);
+    background: url(../img/HERO.png) center no-repeat;
     height: 800px;
     padding-top: 50px;
 
@@ -70,7 +70,7 @@ header {
                     line-height: 19px;
                     font-weight: 400;
                     font-size: 14px;
-
+                    position: relative;
                     .link {
                         background: url(../img/phone.png) center no-repeat;
                         background-size: 23px 23px;
@@ -80,13 +80,13 @@ header {
                         font-size: 18px;
                         width: 131px;
 
-                        &::after {
+                        &::before {
                             content: "";
 
                             position: absolute;
                             border-left: 1px solid white;
                             height: 51px;
-                            top: 56px; bottom: 0; right: 0; left: 835px;
+                            left: -20px;
                         }
                     }
                 }
@@ -122,16 +122,7 @@ header {
             font-family: $FWsans;
             text-transform: uppercase;
             margin-bottom: 10px;
-
-            &::after {
-                content: '';
-
-                position: absolute;
-                border: 1px solid white;
-                width: 61px;
-                top: 487px;
-                left: 226px;
-            }
+            position: relative;
 
             &::before {
                 content: '';
@@ -139,8 +130,18 @@ header {
                 position: absolute;
                 border: 1px solid white;
                 width: 61px;
-                top: 487px;
-                left: 480px;
+                top: 11px;
+                left: 85px;
+            }
+
+            &::after {
+                content: '';
+
+                position: absolute;
+                border: 1px solid white;
+                width: 61px;
+                top: 11px;
+                left: 335px;
             }
         }
 
@@ -338,7 +339,7 @@ header {
 
     .title {
         text-align: center;
-
+        position: relative;
         h1 {
             color: white;
             font-size: 54px;
@@ -348,13 +349,6 @@ header {
             font-family: $FWtinos;
             text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
         }
-    }
-
-    .our-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
         &::after {
             content: '';
 
@@ -363,8 +357,9 @@ header {
             height: 50px;
             border-radius: 50%;
             background: #D67E34;
-            top: 3705px;
-            left: 50px;
+            top: 525px;
+            left: -85px;
+            z-index: 1;
         }
 
         &::before {
@@ -375,9 +370,15 @@ header {
             height: 50px;
             border-radius: 50%;
             background: #D67E34;
-            top: 3705px;
-            right: 50px;
+            top: 525px;
+            right: -85px;
         }
+    }
+
+    .our-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         >div {
             text-align: center;
@@ -502,16 +503,16 @@ header {
             margin-bottom: 27.43px;
         }
         
-        &::after {
+        &::before {
             content: '';
 
             position: absolute;
-            width: 30px;
+            width: 25px;
             height: 100px;
             background-color: red;
             left: 0;
         }
-        &::before {
+        &::after {
             content: '';
 
             position: absolute;

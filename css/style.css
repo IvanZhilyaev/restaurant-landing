@@ -91,7 +91,7 @@ body a {
 }
 
 header {
-	background: url(../img/HERO\ IMG.png);
+	background: url(../img/HERO.png) center no-repeat;
 	height: 800px;
 	padding-top: 50px;
 }
@@ -131,6 +131,7 @@ header .navbar .menu li:nth-child(5) {
 	line-height: 19px;
 	font-weight: 400;
 	font-size: 14px;
+	position: relative;
 }
 header .navbar .menu li:nth-child(5) .link {
 	background: url(../img/phone.png) center no-repeat;
@@ -141,15 +142,12 @@ header .navbar .menu li:nth-child(5) .link {
 	font-size: 18px;
 	width: 131px;
 }
-header .navbar .menu li:nth-child(5) .link::after {
+header .navbar .menu li:nth-child(5) .link::before {
 	content: "";
 	position: absolute;
 	border-left: 1px solid white;
 	height: 51px;
-	top: 56px;
-	bottom: 0;
-	right: 0;
-	left: 835px;
+	left: -20px;
 }
 header .navbar .menu li:nth-child(6) {
 	border: 1px solid #ff7400;
@@ -177,22 +175,23 @@ header .title p {
 	font-family: "Open Sans", sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 10px;
-}
-header .title p::after {
-	content: "";
-	position: absolute;
-	border: 1px solid white;
-	width: 61px;
-	top: 487px;
-	left: 226px;
+	position: relative;
 }
 header .title p::before {
 	content: "";
 	position: absolute;
 	border: 1px solid white;
 	width: 61px;
-	top: 487px;
-	left: 480px;
+	top: 11px;
+	left: 85px;
+}
+header .title p::after {
+	content: "";
+	position: absolute;
+	border: 1px solid white;
+	width: 61px;
+	top: 11px;
+	left: 335px;
 }
 header .title a {
 	border: 1px solid #ff7400;
@@ -387,6 +386,7 @@ header .intro > div span {
 }
 .our-menu-section .title {
 	text-align: center;
+	position: relative;
 }
 .our-menu-section .title h1 {
 	color: white;
@@ -396,6 +396,27 @@ header .intro > div span {
 	margin-bottom: 138px;
 	font-family: "Tinos", serif;
 	text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.our-menu-section .title::after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #D67E34;
+	top: 525px;
+	left: -85px;
+	z-index: 1;
+}
+.our-menu-section .title::before {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #D67E34;
+	top: 525px;
+	right: -85px;
 }
 .our-menu-section .our-menu {
 	display: -webkit-box;
@@ -407,26 +428,6 @@ header .intro > div span {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-}
-.our-menu-section .our-menu::after {
-	content: "";
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: #D67E34;
-	top: 3705px;
-	left: 50px;
-}
-.our-menu-section .our-menu::before {
-	content: "";
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background: #D67E34;
-	top: 3705px;
-	right: 50px;
 }
 .our-menu-section .our-menu > div {
 	text-align: center;
@@ -536,15 +537,15 @@ header .intro > div span {
 .gallary-dishes .gallary img {
 	margin-bottom: 27.43px;
 }
-.gallary-dishes .gallary::after {
+.gallary-dishes .gallary::before {
 	content: "";
 	position: absolute;
-	width: 30px;
+	width: 25px;
 	height: 100px;
 	background-color: red;
 	left: 0;
 }
-.gallary-dishes .gallary::before {
+.gallary-dishes .gallary::after {
 	content: "";
 	position: absolute;
 	width: 30px;

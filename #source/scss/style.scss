@@ -21,6 +21,10 @@ $FWtinos: 'Tinos', serif;
 $FWsans: 'Open Sans', sans-serif;
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: white;
     font-family: $FWsans;

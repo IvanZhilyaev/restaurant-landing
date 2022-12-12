@@ -94,6 +94,14 @@ header {
                     border: 1px solid #ff7400;
                     background: #ff7400;
                     padding: 14px 19px 14px 18px;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        transform: translateY(5px);
+                    }
+                    &:active {
+                        transform: scale(0.9);
+                    }
                 }
             }
         }
@@ -145,11 +153,23 @@ header {
             }
         }
 
-        a {
-            border: 1px solid #ff7400;
-            background: #ff7400;
-            padding: 14px 28px 14px 27px;
+        .link {
+            width: 138px;
+            margin: 0 auto;
+            transition: all 0.4s ease;
+            a {
+                border: 1px solid #ff7400;
+                background: #ff7400;
+                padding: 14px 28px 14px 27px;
+            }
+            &:hover {
+                transform: translateY(5px);
+            }
+            &:active {
+                transform: scale(0.9);
+            }
         }
+        
     }
 
     .intro {
@@ -274,9 +294,17 @@ header {
             
         }
         .btn {
+            transition: all 0.4s ease;
             border-bottom: 1px solid #ff7400;
             background: #ff7400;
             padding: 14px 19px 14px 18px;
+
+            &:hover {
+                transform: translateY(5px);
+            }
+            &:active {
+                transform: scale(0.9);
+            }
         }
 
         a {

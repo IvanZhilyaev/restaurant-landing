@@ -467,12 +467,24 @@ header .intro > div span {
 	font-size: 18px;
 	width: 226px;
 }
-.our-menu-section .our-menu > div a {
+.our-menu-section .our-menu > div .link {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.our-menu-section .our-menu > div .link a {
 	border: 1px solid #D67E34;
 	background: #D67E34;
 	padding: 14px 68px 14px 67px;
 	-webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 	        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.our-menu-section .our-menu > div .link:hover {
+	-webkit-transform: translateY(5px);
+	        transform: translateY(5px);
+}
+.our-menu-section .our-menu > div .link:active {
+	-webkit-transform: scale(0.9);
+	        transform: scale(0.9);
 }
 
 .review-section {

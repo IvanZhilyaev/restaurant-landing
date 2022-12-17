@@ -931,7 +931,7 @@ header .intro > div span {
     width: 530px;
   }
   header .navbar .menu {
-    width: 200px;
+    width: 222px;
   }
   header .title {
     position: relative;
@@ -945,6 +945,12 @@ header .intro > div span {
   }
   .our-history-section .our-history > img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  header .navbar .menu {
+    width: 200px;
   }
 }
 

@@ -362,7 +362,7 @@
 
         .navbar {
             .menu {
-                width: 200px;
+                width: 222px;
             }
         }
         .title {
@@ -386,6 +386,16 @@
         }
     }
     
+}
+
+@media screen and (max-width: 488px) {
+    header {
+        .navbar {
+            .menu {
+                width: 200px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 530px) {

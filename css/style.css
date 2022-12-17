@@ -770,6 +770,9 @@ header .intro > div span {
   .container {
     width: 567px;
   }
+  header .navbar {
+    position: relative;
+  }
   header .navbar .burger-menu {
     display: block;
   }
@@ -799,6 +802,7 @@ header .intro > div span {
     flex-direction: column;
     align-items: flex-start;
     border-radius: 0px 0px 50px 0px;
+    z-index: 5;
   }
   header .navbar .menu li {
     margin-bottom: 10px;

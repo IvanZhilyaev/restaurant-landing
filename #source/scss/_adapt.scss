@@ -1,0 +1,541 @@
+@media screen and (max-width: 1307px) {
+    .container {
+        width: 1100px;
+    }
+
+    .our-history-section {
+
+        .our-history {
+
+            .history {
+
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    header, section, footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1275px) {
+    .container {
+        width: 966px;
+    }
+
+    header {
+
+        .intro {
+            flex-wrap: wrap;
+
+            >div:not(div:nth-child(3)) {
+                margin-bottom: 100px;
+            }
+            
+        }
+
+    }
+
+    .our-history-section {
+        padding-top: 450px;
+    }
+}
+
+@media screen and (max-width: 1137px){
+    .container {
+        width: 920px;
+    }
+
+    .our-menu-section {
+
+        .container {
+            &::before {
+                left: 200px;
+            }
+    
+            &::after {
+                right: 200px;
+            }
+        }
+
+        .our-menu {
+            display: block;
+            width: 350px;
+            margin: 0 auto;
+
+            >div:not(div:nth-child(1)) {
+                display: none;
+            }
+            
+        }
+    }
+
+    .gallary {
+        flex-wrap: wrap;
+        
+        >img:last-child {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 920px){
+    .container {
+        width: 756px;
+    }
+
+    header {
+
+        .navbar {
+
+            .menu {
+                >li:last-child {
+                    margin-right: 0;
+                    margin-left: 31px;
+                }
+
+                >li:nth-child(5) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .our-menu-section {
+
+        .container {
+            &::before {
+                left: 120px;
+            }
+    
+            &::after {
+                right: 120px;
+            }
+        }
+    }
+
+    .review-section {
+        
+        .review {
+            
+            >p {
+                width: 90%;
+            }
+        }
+    }
+
+    .cook-gallary {
+
+        .gallary {
+            flex-wrap: wrap;
+            
+            >img:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .container {
+        width: 567px;
+    }
+
+    header {
+
+        .navbar {
+            .burger-menu {
+                display: block;
+
+                .anim-menu.active {
+
+                    span:nth-child(1) {
+                        top: 50%;
+                        transform: translate(-50%, 0%) rotate(45deg);
+                    }
+                    span:nth-child(2) {
+                        transform: translate(-50%, 0%) rotate(-45deg);  
+                    }
+                    span:nth-child(3) {
+                        top: 50%;
+                        transform: translate(-50%, 0%) rotate(45deg);
+                    }
+                }
+            }
+
+            .menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 400px;
+                height: 40%;
+                padding: 15px;
+                transform: translateY(-100%);
+                transition: transform 0.5s;
+                background: #ff7400;
+                color: white;
+                font-family: $FWsans;
+                flex-direction: column;
+                justify-content: none;
+                align-items: flex-start;
+                border-radius: 0px 0px 50px 0px;
+
+                li {
+                    margin-bottom: 10px;
+    
+                    &:last-child {
+                        margin-left: 63px;
+                    }
+                    &:nth-child(4) {
+                        background: none;
+                        padding-right: 34.7px;
+                        margin-right: 37.32px;
+                        background-position: right;
+                    }
+                    &:nth-child(5) {
+                        margin-top: 10px;
+                        width: 160px;
+                        line-height: 19px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        position: relative;
+                        .link {
+                            background: url(../img/phone.png) center no-repeat;
+                            background-size: 23px 23px;
+                            background-position: left center;
+                            padding-left: 29px;
+                            height: 25px;
+                            font-size: 18px;
+                            width: 131px;
+                        }
+                    }
+                    &:nth-child(6) {
+                        box-shadow: 1px 1px 20px 5px #c85a00;
+                        background: #ff7400;
+                        padding: 14px 19px 14px 18px;
+                        border-radius: 20px;
+                        transition: all 0.4s ease;
+                        margin-left: 0;
+    
+                        &:hover {
+                            transform: translateY(5px);
+                        }
+                        &:active {
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+            .menu.active {
+                transform: translateY(0);
+            }
+        }
+
+        .title {
+            margin-left: 48px;
+        }
+    }
+
+    .our-history-section {
+        margin-top: 400px;
+        .our-history {
+            flex-direction: column;
+            align-items: center;
+
+            .history {
+                
+
+                .stats {
+                    flex-direction: column;
+
+                    >div:not(div:nth-child(3)) {
+                        margin-bottom: 49px;
+                    }
+
+                    >div:last-child {
+                        margin-bottom: 85px;
+                    }
+                }
+            }
+        }
+    }
+
+    .our-menu-section {
+        color: black;
+        font-size: 16px;
+        line-height: 21.71px;
+        background: url(../img/Mask-bg.png) center no-repeat;
+        padding-bottom: 226px;
+    
+        .container {
+            position: relative;
+    
+            &::before {
+                content: '';
+        
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #D67E34;
+                top: 525px;
+                left: 30px;
+            }
+        
+            &::after {
+                content: '';
+        
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #D67E34;
+                top: 525px;
+                right: 30px;
+                z-index: 1;
+            }
+        }
+    }
+    .dishes-section {
+        .title {
+            h1 {
+                margin-bottom: 30px;
+            }
+        }
+        .dishes {
+            flex-direction: column;
+            align-items: center;
+            
+            .other-dishes {
+                margin-left: 0;
+
+                >div {
+
+                    >p {
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .gallary-dishes {
+        
+        .gallary {
+            
+            img {
+                width: 90%;
+            }
+        }
+    }
+    .cook-gallary {
+
+        .gallary {
+            flex-wrap: wrap;
+            
+            >img:first-child{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 530px;
+    }
+
+    
+
+    header {
+
+        .navbar {
+            .menu {
+                width: 200px;
+            }
+        }
+        .title {
+            position: relative;
+            margin-left: 30px;
+
+            p:before {
+                border: none;
+            }
+            p:after {
+                border: none;
+            }
+        }
+    }
+
+    .our-history-section {
+        .our-history {
+            >img {
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+    .container {
+        width: 320px;
+    }
+
+    header {
+        
+        .title {
+            margin-left: 40px;
+            h1 {
+                font-size: 30px;
+                line-height: 34px;
+
+                span {
+                    font-size: 40px;
+                    line-height: 46px;
+                }
+            }
+
+            p {
+                line-height: 20px;
+            }
+
+            .link {
+                
+                a {
+                    line-height: 19px;
+                }
+            }
+        }
+
+        .intro {
+            width: 290px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            >div {
+                margin-top: 20px;
+                font-size: 26px;
+                line-height: 30px;
+            }
+
+            >div:not(div:nth-child(3)) {
+                margin-bottom: 5px;
+            }
+        }
+        
+    }
+
+    .our-history-section {
+        margin-top: 200px;
+        
+        .our-history {
+            .history {
+                width: 100%;
+                >p {
+                    display: inline-block;
+                    width: 290px;
+                    text-align: center;
+                }
+                
+                .stats {
+                    width: 290px;
+                    align-items: center;
+                    display: inline-block;
+                }
+            }          
+        }
+        
+        .celebrating {
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                
+                h1 {
+                    width: 290px;
+                    font-size: 30px;
+                    line-height: 34px;
+                    text-align: center;
+                    margin-bottom: 21px;
+                    display: inline-block;
+                }
+                h2 {
+                    display: inline-block;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-align: center;
+                    width: 290px;
+                    margin-bottom: 41px;
+                }
+            }
+        }
+    }
+
+    
+
+    .dishes-section {
+        .dishes {
+            align-items: flex-start;
+            .main-dish {
+                img {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .our-menu-section {
+
+        .container {
+            &::before {
+                border: transparent;
+                background: transparent;
+            }
+            &::after {
+                border: transparent;
+                background: transparent;
+            }
+        }
+
+        .our-menu {
+            width: 100%;
+            .first-dish {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+
+    .gallary-dishes {
+
+        .gallary {
+            &:before {
+                border: none;
+                background: transparent;
+            }
+
+            &::after {
+                border: none;
+                background: transparent;
+            }
+        }
+    }
+
+    .cook-gallary {
+        .gallary {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

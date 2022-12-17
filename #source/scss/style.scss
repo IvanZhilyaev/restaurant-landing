@@ -53,9 +53,14 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        .logo {
+            margin-left: 17px;
+        }
+
         .menu {
             display: flex;
             align-items: center;
+
 
             li {
                 margin-right: 23px;
@@ -108,9 +113,42 @@ header {
                     }
                 }
             }
+
+            
         }
 
-        
+
+        .burger-menu {
+            display: none;
+            margin-right: 17px;
+            .anim-menu {
+                width: 30.88px;
+                height: 30.88px;
+                position: relative;
+                overflow: hidden;
+                z-index: 2;
+
+                span {
+                    background: #FF7400;
+                    position: absolute;
+                    height: 3.25px;
+                    border-radius: 50px;
+                    top: 50%;
+                    left: 50%;
+                    width: 30.88px;
+                    transition: all 0.5s;
+                    transform: translate(-50%, -50%);
+                }
+
+                
+                span:nth-of-type(1) {
+                    top: calc(50% - 10px);
+                }
+                span:nth-of-type(3) {
+                    top: calc(50% + 10px);
+                }
+            }
+        }
     }
     .title {
         margin-top: 204px;
@@ -366,12 +404,42 @@ header {
     color: black;
     font-size: 16px;
     line-height: 21.71px;
-    background: url(../img/Mask\ Group-bg.png) center no-repeat;
+    background: url(../img/Mask-bg.png) center no-repeat;
     padding-bottom: 226px;
+
+    .container {
+        position: relative;
+
+        &::before {
+            content: '';
+            
+            border: 1px solid #D67E34;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #D67E34;
+            top: 525px;
+            left: -80px;
+        }
+    
+        &::after {
+            content: '';
+
+            border: 1px solid #D67E34;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #D67E34;
+            top: 525px;
+            right: -80px;
+            z-index: 1;
+        }
+    }
 
     .title {
         text-align: center;
-        position: relative;
         h1 {
             color: white;
             font-size: 54px;
@@ -380,30 +448,6 @@ header {
             margin-bottom: 138px;
             font-family: $FWtinos;
             text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
-        }
-        &::after {
-            content: '';
-
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #D67E34;
-            top: 525px;
-            left: -85px;
-            z-index: 1;
-        }
-
-        &::before {
-            content: '';
-
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #D67E34;
-            top: 525px;
-            right: -85px;
         }
     }
 
@@ -560,7 +604,7 @@ header {
             content: '';
 
             position: absolute;
-            width: 30px;
+            width: 25px;
             height: 100px;
             background-color: red;
             right: 0;
@@ -593,3 +637,5 @@ header {
         margin-bottom: 100px;
     }
 }
+
+@import "./adapt";
